@@ -16,10 +16,12 @@ from django.utils.translation import gettext_lazy, pgettext
 @keep_lazy_text
 def capfirst(x):
     """Capitalize the first letter of a string."""
+    print(f'Django CAPFIRST x is: {x}')
     if not x:
         return x
     if not isinstance(x, str):
         x = str(x)
+    print(f'Django CAPFIRST 2222 x is: {x}')
     return x[0].upper() + x[1:]
 
 
